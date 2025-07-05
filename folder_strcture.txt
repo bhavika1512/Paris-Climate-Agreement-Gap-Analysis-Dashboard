@@ -1,0 +1,38 @@
+co2_emissions_dashboard/
+├── app.py                       # Main application entry point
+├── config.py                    # Configuration settings
+├── requirements.txt             # Project dependencies
+├── README.md                    # Project documentation
+├── .gitignore                   # Git ignore file
+├── data/
+│   ├── GCB2022v27_MtCO2_flat.csv           # Total emissions data
+│   ├── GCB2022v27_percapita_flat.csv       # Per capita emissions data
+│   ├── GCB2022v27_sources_flat.csv         # Emission sources data
+│   ├── GCB2022v27_MtCO2_flat_metadata.json # Total emissions metadata
+│   └── GCB2022v27_percapita_flat_metadata.json # Per capita metadata
+├── src/
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── loader.py            # Data loading functions
+│   │   └── aggregator.py        # Data aggregation utilities
+│   ├── visualizations/
+│   │   ├── __init__.py
+│   │   ├── time_series.py       # Time series visualization functions
+│   │   ├── geo_visualizations.py # Geographic visualization functions
+│   │   ├── comparison_charts.py # Comparison visualization functions
+│   │   └── source_breakdown.py  # Emission source visualization functions
+│   └── utils/
+│       ├── __init__.py
+│       ├── color_schemes.py     # Color palette definitions
+│       ├── metrics.py           # Custom metrics calculations
+│       └── formatters.py        # Data formatting utilities
+├── pages/
+│   ├── 01_Global_Trends.py      # Global emissions trends analysis
+│   ├── 02_Country_Analysis.py   # Country-specific analysis page
+│   ├── 03_Emission_Sources.py   # Emission sources breakdown page
+│   └── 04_Comparative_Analysis.py # Country comparison page
+└── components/
+    ├── __init__.py
+    ├── sidebar.py               # Sidebar component functions
+    ├── metrics_display.py       # KPI and metrics display components
+    └── filters.py               # Filter component functions
